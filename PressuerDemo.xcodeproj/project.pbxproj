@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		74925B48CAF1464EAC6FB209 /* Pods_PressuerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C37DA8AA3C38FA94358BC65 /* Pods_PressuerDemo.framework */; };
+		E2BB19051E7933C300C4313D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB19041E7933C300C4313D /* AppDelegate.swift */; };
+		E2BB19071E7933C300C4313D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BB19061E7933C300C4313D /* ViewController.swift */; };
+		E2BB190A1E7933C300C4313D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BB19081E7933C300C4313D /* Main.storyboard */; };
+		E2BB190C1E7933C300C4313D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2BB190B1E7933C300C4313D /* Assets.xcassets */; };
+		E2BB190F1E7933C300C4313D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2BB190D1E7933C300C4313D /* LaunchScreen.storyboard */; };
+		E2BB19181E7933DB00C4313D /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2BB19171E7933DB00C4313D /* CoreMotion.framework */; };
+		E2D2A85D1E7A763600DC7BBF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2D2A85C1E7A763600DC7BBF /* CoreData.framework */; };
+		E2D2A8671E7A826200DC7BBF /* PressuerDemo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A8551E7A71FF00DC7BBF /* PressuerDemo.xcdatamodeld */; };
+		E2D2A8931E7A8A2200DC7BBF /* AltimeterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A8921E7A8A2200DC7BBF /* AltimeterRepository.swift */; };
+		E2D2A8951E7A8A4700DC7BBF /* Altimeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A8941E7A8A4700DC7BBF /* Altimeter.swift */; };
+		E2D2A89B1E7A8BE600DC7BBF /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A89A1E7A8BE600DC7BBF /* Mapper.swift */; };
+		E2D2A8AB1E7A953F00DC7BBF /* HistotyDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A8AA1E7A953F00DC7BBF /* HistotyDataViewController.swift */; };
+		E2D2A8AE1E7A95B500DC7BBF /* AltimeterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D2A8AC1E7A95B500DC7BBF /* AltimeterTableViewCell.swift */; };
+		E2D2A8AF1E7A95B500DC7BBF /* AltimeterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2D2A8AD1E7A95B500DC7BBF /* AltimeterTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0C37DA8AA3C38FA94358BC65 /* Pods_PressuerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PressuerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2BB19011E7933C300C4313D /* PressuerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PressuerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2BB19041E7933C300C4313D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2BB19061E7933C300C4313D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E2BB19091E7933C300C4313D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2BB190B1E7933C300C4313D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2BB190E1E7933C300C4313D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2BB19101E7933C300C4313D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2BB19171E7933DB00C4313D /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		E2D2A8561E7A71FF00DC7BBF /* PressuerDemo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PressuerDemo.xcdatamodel; sourceTree = "<group>"; };
+		E2D2A85C1E7A763600DC7BBF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		E2D2A8921E7A8A2200DC7BBF /* AltimeterRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AltimeterRepository.swift; sourceTree = "<group>"; };
+		E2D2A8941E7A8A4700DC7BBF /* Altimeter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Altimeter.swift; sourceTree = "<group>"; };
+		E2D2A89A1E7A8BE600DC7BBF /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mapper.swift; sourceTree = "<group>"; };
+		E2D2A8AA1E7A953F00DC7BBF /* HistotyDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistotyDataViewController.swift; sourceTree = "<group>"; };
+		E2D2A8AC1E7A95B500DC7BBF /* AltimeterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AltimeterTableViewCell.swift; sourceTree = "<group>"; };
+		E2D2A8AD1E7A95B500DC7BBF /* AltimeterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AltimeterTableViewCell.xib; sourceTree = "<group>"; };
+		E6401ED41D303DC2B8DD3468 /* Pods-PressuerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PressuerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PressuerDemo/Pods-PressuerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		F930E55E4CB282EF33863051 /* Pods-PressuerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PressuerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-PressuerDemo/Pods-PressuerDemo.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2BB18FE1E7933C300C4313D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2D2A85D1E7A763600DC7BBF /* CoreData.framework in Frameworks */,
+				E2BB19181E7933DB00C4313D /* CoreMotion.framework in Frameworks */,
+				74925B48CAF1464EAC6FB209 /* Pods_PressuerDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		058FE89F564B3838E289E9B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E6401ED41D303DC2B8DD3468 /* Pods-PressuerDemo.debug.xcconfig */,
+				F930E55E4CB282EF33863051 /* Pods-PressuerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E2BB18F81E7933C300C4313D = {
+			isa = PBXGroup;
+			children = (
+				E2BB19031E7933C300C4313D /* PressuerDemo */,
+				E2BB19021E7933C300C4313D /* Products */,
+				E2BB19161E7933DB00C4313D /* Frameworks */,
+				058FE89F564B3838E289E9B0 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		E2BB19021E7933C300C4313D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2BB19011E7933C300C4313D /* PressuerDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2BB19031E7933C300C4313D /* PressuerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				E2BB19041E7933C300C4313D /* AppDelegate.swift */,
+				E2BB19061E7933C300C4313D /* ViewController.swift */,
+				E2BB19081E7933C300C4313D /* Main.storyboard */,
+				E2BB190B1E7933C300C4313D /* Assets.xcassets */,
+				E2BB190D1E7933C300C4313D /* LaunchScreen.storyboard */,
+				E2BB19101E7933C300C4313D /* Info.plist */,
+				E2D2A8551E7A71FF00DC7BBF /* PressuerDemo.xcdatamodeld */,
+				E2D2A8921E7A8A2200DC7BBF /* AltimeterRepository.swift */,
+				E2D2A8941E7A8A4700DC7BBF /* Altimeter.swift */,
+				E2D2A89A1E7A8BE600DC7BBF /* Mapper.swift */,
+				E2D2A8AA1E7A953F00DC7BBF /* HistotyDataViewController.swift */,
+				E2D2A8AC1E7A95B500DC7BBF /* AltimeterTableViewCell.swift */,
+				E2D2A8AD1E7A95B500DC7BBF /* AltimeterTableViewCell.xib */,
+			);
+			path = PressuerDemo;
+			sourceTree = "<group>";
+		};
+		E2BB19161E7933DB00C4313D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2D2A85C1E7A763600DC7BBF /* CoreData.framework */,
+				E2BB19171E7933DB00C4313D /* CoreMotion.framework */,
+				0C37DA8AA3C38FA94358BC65 /* Pods_PressuerDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2BB19001E7933C300C4313D /* PressuerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2BB19131E7933C300C4313D /* Build configuration list for PBXNativeTarget "PressuerDemo" */;
+			buildPhases = (
+				F245A6BBC9D02A1F876339B2 /* [CP] Check Pods Manifest.lock */,
+				E2BB18FD1E7933C300C4313D /* Sources */,
+				E2BB18FE1E7933C300C4313D /* Frameworks */,
+				E2BB18FF1E7933C300C4313D /* Resources */,
+				C04558150C3262B50757E61F /* [CP] Embed Pods Frameworks */,
+				B9179994C1CC51A4348AA537 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PressuerDemo;
+			productName = PressuerDemo;
+			productReference = E2BB19011E7933C300C4313D /* PressuerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2BB18F91E7933C300C4313D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = ThienTX;
+				TargetAttributes = {
+					E2BB19001E7933C300C4313D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = HKNYWM3TJR;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E2BB18FC1E7933C300C4313D /* Build configuration list for PBXProject "PressuerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2BB18F81E7933C300C4313D;
+			productRefGroup = E2BB19021E7933C300C4313D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2BB19001E7933C300C4313D /* PressuerDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2BB18FF1E7933C300C4313D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2BB190F1E7933C300C4313D /* LaunchScreen.storyboard in Resources */,
+				E2D2A8AF1E7A95B500DC7BBF /* AltimeterTableViewCell.xib in Resources */,
+				E2BB190C1E7933C300C4313D /* Assets.xcassets in Resources */,
+				E2BB190A1E7933C300C4313D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B9179994C1CC51A4348AA537 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PressuerDemo/Pods-PressuerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C04558150C3262B50757E61F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PressuerDemo/Pods-PressuerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F245A6BBC9D02A1F876339B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2BB18FD1E7933C300C4313D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2D2A8951E7A8A4700DC7BBF /* Altimeter.swift in Sources */,
+				E2D2A8AE1E7A95B500DC7BBF /* AltimeterTableViewCell.swift in Sources */,
+				E2D2A89B1E7A8BE600DC7BBF /* Mapper.swift in Sources */,
+				E2BB19071E7933C300C4313D /* ViewController.swift in Sources */,
+				E2BB19051E7933C300C4313D /* AppDelegate.swift in Sources */,
+				E2D2A8AB1E7A953F00DC7BBF /* HistotyDataViewController.swift in Sources */,
+				E2D2A8671E7A826200DC7BBF /* PressuerDemo.xcdatamodeld in Sources */,
+				E2D2A8931E7A8A2200DC7BBF /* AltimeterRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E2BB19081E7933C300C4313D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2BB19091E7933C300C4313D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2BB190D1E7933C300C4313D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2BB190E1E7933C300C4313D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2BB19111E7933C300C4313D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2BB19121E7933C300C4313D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2BB19141E7933C300C4313D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E6401ED41D303DC2B8DD3468 /* Pods-PressuerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HKNYWM3TJR;
+				INFOPLIST_FILE = PressuerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = thientx.cm.PressuerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		E2BB19151E7933C300C4313D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F930E55E4CB282EF33863051 /* Pods-PressuerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = HKNYWM3TJR;
+				INFOPLIST_FILE = PressuerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = thientx.cm.PressuerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2BB18FC1E7933C300C4313D /* Build configuration list for PBXProject "PressuerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2BB19111E7933C300C4313D /* Debug */,
+				E2BB19121E7933C300C4313D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2BB19131E7933C300C4313D /* Build configuration list for PBXNativeTarget "PressuerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2BB19141E7933C300C4313D /* Debug */,
+				E2BB19151E7933C300C4313D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E2D2A8551E7A71FF00DC7BBF /* PressuerDemo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E2D2A8561E7A71FF00DC7BBF /* PressuerDemo.xcdatamodel */,
+			);
+			currentVersion = E2D2A8561E7A71FF00DC7BBF /* PressuerDemo.xcdatamodel */;
+			path = PressuerDemo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E2BB18F91E7933C300C4313D /* Project object */;
+}

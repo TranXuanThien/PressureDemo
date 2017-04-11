@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AltimeterTableViewCell" rowHeight="181" id="KGk-i7-Jjw" customClass="AltimeterTableViewCell" customModule="PressuerDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="181"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="180.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i90-Gf-Mrk">
+                        <rect key="frame" x="15" y="8" width="287" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lk6-DO-Bfb">
+                        <rect key="frame" x="15" y="39" width="287" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c05-Ra-6Hp">
+                        <rect key="frame" x="15" y="70" width="287" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Lk6-DO-Bfb" firstAttribute="top" secondItem="i90-Gf-Mrk" secondAttribute="bottom" constant="10" id="0P2-g3-bnd"/>
+                    <constraint firstItem="c05-Ra-6Hp" firstAttribute="trailing" secondItem="i90-Gf-Mrk" secondAttribute="trailing" id="8cl-Ug-j8e"/>
+                    <constraint firstAttribute="topMargin" secondItem="i90-Gf-Mrk" secondAttribute="top" id="AXJ-WC-ttA"/>
+                    <constraint firstItem="c05-Ra-6Hp" firstAttribute="top" secondItem="Lk6-DO-Bfb" secondAttribute="bottom" constant="10" id="BSV-wO-qpj"/>
+                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="c05-Ra-6Hp" secondAttribute="bottom" constant="10" id="I6m-Tl-iUA"/>
+                    <constraint firstItem="c05-Ra-6Hp" firstAttribute="leading" secondItem="i90-Gf-Mrk" secondAttribute="leading" id="Lck-Tt-nLq"/>
+                    <constraint firstItem="Lk6-DO-Bfb" firstAttribute="trailing" secondItem="i90-Gf-Mrk" secondAttribute="trailing" id="QYA-0M-yF1"/>
+                    <constraint firstItem="i90-Gf-Mrk" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="7" id="SJp-yZ-e2k"/>
+                    <constraint firstItem="Lk6-DO-Bfb" firstAttribute="leading" secondItem="i90-Gf-Mrk" secondAttribute="leading" id="eEd-k9-LoE"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="i90-Gf-Mrk" secondAttribute="trailing" constant="10" id="hkd-OL-HJM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="alimeter" destination="i90-Gf-Mrk" id="xMW-rv-0BF"/>
+                <outlet property="altimeterFt" destination="Lk6-DO-Bfb" id="gbl-3C-bRv"/>
+                <outlet property="pressure" destination="c05-Ra-6Hp" id="kg5-y5-oWa"/>
+            </connections>
+            <point key="canvasLocation" x="29" y="82.5"/>
+        </tableViewCell>
+    </objects>
+</document>
